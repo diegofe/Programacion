@@ -1,0 +1,24 @@
+// Areadeltriangulo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{   
+	float area,sp,ladoa,ladob,ladoc;
+	cout<<"Ingrese lado 1: ";
+	cin>>ladoa;
+	cout<<"ingrese lado 2: ";
+	cin>>ladob;
+	cout<<"ingrese lado 3: ";
+	cin>>ladoc;
+	sp=(ladoa+ladob+ladoc)/2;
+	area=sqrt(sp*(sp-ladoa)*(sp-ladob)*(sp-ladoc));
+	cout<<"area: "<<area;
+	getch();
+}
