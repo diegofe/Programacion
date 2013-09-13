@@ -1,0 +1,30 @@
+// Interes simple.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+
+{ 
+	float I,k,i,d,n;
+	cout<< "ingrese el capital: ";
+	cin>> k;
+	cout<< "ingrese la taza de interes: ";
+	cin>> i;
+	cout<< "ingrese la cantidad de dias plazo: ";
+	cin>> d;
+	
+	n=d/360;
+	
+	I=k*i*n;
+
+	cout<< "el interes ganado es: ";
+	cout<< I;
+	
+	getch();
+
+}
