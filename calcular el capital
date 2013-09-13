@@ -1,0 +1,26 @@
+// programacion.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main ()
+
+{
+	float k,i,I,n,d;
+    cout<< "ingrese el interes: ";
+    cin>>i;
+    cout<< "ingrese la cantidad del presatamo: ";
+    cin>>I;
+    cout<< "ingrese la cantidad de dias de plazo: ";
+    cin>>d;
+    n=d/360;
+    k=I/(i*n);
+    cout<< "el capital es: ";
+    cout<< k;
+	getch();
+
+}
+
