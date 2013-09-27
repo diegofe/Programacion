@@ -1,0 +1,53 @@
+// Entradas del cine.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+   float c,n,e,p,s,I,P;
+
+	   cout<< "ingrese el costo de las entradas: ";
+	   cin>>c;
+	   
+	   cout<< "ingrese el numero de butacas vendidas: ";
+	   cin>>n;
+	   
+       s=0;
+
+	   for(I=1;I<=n;I++)
+
+	    {    do  { cout<< "ingrese la edad del cliente: ";
+	               cin>>e;
+	             }
+	        while ((e<0)||(e>150));
+				if (e<=12)
+					p=c*0.5;
+				else
+				if (e<=55)
+					p=c;
+				else
+				    p=c*0.2;
+			 s=s+p;
+	   }
+
+       P=s/n;
+	   
+	   cout<< " el ingreso total es: ";
+	   cout<<s;
+
+	   cout<< " el promedio de pago es: ";
+	   cout<<P;
+       
+
+
+	   getch ();
+
+}
+
+
+	 
