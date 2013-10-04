@@ -1,0 +1,49 @@
+// Restaurant de comida rapida.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+
+{ float Hamburguesa,Hamburguesaconqueso,Papasfritas,Soda,PrecioHamburguesas,
+PrecioHamburguesasQueso,PrecioPapas,PrecioSoda,TotalparcialH,TotalparcialHQ,
+TotalparcialPF,TotalparcialS,Totalcuenta;
+
+  cout<< "Ingrese el precio unitario de las hamburguesas: ";
+  cin>> PrecioHamburguesas;
+  cout<< "Ingrese el precio unitario de las hamburguesas con queso: ";
+  cin>>PrecioHamburguesasQueso;
+  cout<< "Ingrese el precio unitario de la porcion de papas: ";
+  cin>>PrecioPapas;
+  cout<< "ingrese el precio unitario de el vaso de soda: ";
+  cin>>PrecioSoda;
+
+
+  cout<< "Ingrese la cantidad de hamburguesas vendidas: ";
+  cin>>Hamburguesa;
+  cout<< "Ingrese la cantidad de hamburguesas con queso vendidads: ";
+  cin>>Hamburguesaconqueso;
+  cout<< "Ingrese la canidad de porciones de papas fritas vendidas: ";
+  cin>>Papasfritas;
+  cout<< "Ingrese la cantidad de vasos de soda vendidos: ";
+  cin>>Soda;
+  
+  TotalparcialH=Hamburguesa*PrecioHamburguesas;
+  TotalparcialHQ=Hamburguesaconqueso*PrecioHamburguesasQueso;
+  TotalparcialPF=Papasfritas*PrecioPapas;
+  TotalparcialS=Soda*PrecioSoda;
+
+  Totalcuenta=TotalparcialH+TotalparcialHQ+TotalparcialPF+TotalparcialS;
+
+  cout<<"La cuenta total es: ";
+  cout<<Totalcuenta;
+
+  getch();
+
+
+
+}
