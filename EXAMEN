@@ -1,0 +1,33 @@
+// Examen.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+
+{   float i;
+    int digito,N;
+    cout<<"Programa pra hallar todo los numeros pares que forman un numero \n\n";
+    cout<<"Ingrese el numero: \n";
+    cin>>N;
+	i=0;
+	while (N>0)
+    { 
+	  digito=N%10;
+	  N=N/10;
+      if (digito%2==0)
+	  i=i+1;
+      cout<< digito<<"\n";
+
+	}
+
+	cout<< "La cantidad de numeros pares es: ";
+	cout<<i;
+
+ getch();
+}
+ 
