@@ -1,0 +1,30 @@
+// Volumen del cilindro
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void Vol_cilindro (float a,float r);
+
+void main ()
+
+{ float altura,radio,Volumen;
+
+  cout<<"Ingrese la altura del cilindro: \n"; 
+  cin>>altura;
+  cout<<"Ingrese el radio de la base del cilindro: \n";
+  cin>>radio;
+  Vol_cilindro(radio,altura);
+
+}
+
+void Vol_cilindro (float a,float r)
+{ float v=3.141516*(r*r)*a;
+  cout<<"El volumen es: \n";
+  cout<<v;
+  getch();
+}
+
